@@ -358,7 +358,7 @@ namespace Riptide
         {
             connectMessage.Release();
             connectMessage = null;
-            RiptideLogger.Log(LogType.Info, LogName, "Connected successfully!");
+            RiptideLogger.Log(LogType.Info, LogName, $"Connected successfully as Client {Id}!");
             Connected?.Invoke(this, EventArgs.Empty);
         }
 
